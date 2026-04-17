@@ -21,8 +21,6 @@ export default function App() {
     deleteCategory,
   } = useTodos();
 
-  const completedCount = todos.filter(todo => todo.completed).length;
-
   // 카테고리별 할일 수
   const todoCounts: Record<string, number> = {};
   for (const cat of categories) {
